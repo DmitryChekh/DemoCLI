@@ -10,13 +10,13 @@ namespace MoneyRockTest.Options
     class PostgresOption
     {
 
-        [Option('r', "read", Required = false, HelpText = "Read string from Redis.")]
+        [Option('r', "read", Required = false, HelpText = "Read string from Postgres.")]
         public bool Read { get; set; }
 
-        [Option('w', "write", Required = false, HelpText = "Write string to Redis")]
+        [Option('w', "write", Required = false, HelpText = "Write string to Postgres")]
         public bool Write { get; set; }
 
-        [Option('i', "id", Required = false, HelpText = "Write string to Redis")]
+        [Option('i', "id", Required = false, HelpText = "Read string from Postgres by id")]
         public bool Id { get; set; }
 
         [Value(0, Required = true, HelpText = "Value")]
