@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using LinqToDB.Mapping;
 
-namespace MoneyRockCLI.DataModels
+namespace Utilities.DataModels
 {
 
     [Table(Name ="messagestrings")]

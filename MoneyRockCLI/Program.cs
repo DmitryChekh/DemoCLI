@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using StackExchange.Redis;
-using CommandLine.Text;
-using CommandLine;
-using MoneyRockCLI.Options;
-using MoneyRockCLI.Services;
+using Autofac;
 using LinqToDB.Data;
-using MoneyRockCLI.DataModels;
+using MoneyRockCLI.Data;
 
 namespace MoneyRockCLI
 {
@@ -16,10 +10,8 @@ namespace MoneyRockCLI
         public static bool keepRunnig = true;
         static void Main()
         {
-
+            var container = ContainerConfigure.Configure();
             DataConnection.DefaultSettings = new MySettings();
-
-            CommandExecuter commandExecuter = new CommandExecuter();
 
             Console.CancelKeyPress += delegate (object sender, ConsoleCancelEventArgs e)
             {
@@ -38,7 +30,11 @@ namespace MoneyRockCLI
 
                 var args = command.Split(' ');
 
-                commandExecuter.Execute(args);
+                using (var scope = container.BeginLifetimeScope())
+                {
+                    var commandExecuter = scope.Resolve<ICommandExecuter>();
+                    commandExecuter.Execute(args);
+                }
 
             }
             

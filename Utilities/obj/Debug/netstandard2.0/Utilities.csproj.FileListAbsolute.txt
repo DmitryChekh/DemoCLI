@@ -1,0 +1,9 @@
+E:\Programming\example\MoneyRockTest\Utilities\obj\Debug\netstandard2.0\Utilities.csprojAssemblyReference.cache
+E:\Programming\example\MoneyRockTest\Utilities\obj\Debug\netstandard2.0\Utilities.AssemblyInfoInputs.cache
+E:\Programming\example\MoneyRockTest\Utilities\obj\Debug\netstandard2.0\Utilities.AssemblyInfo.cs
+E:\Programming\example\MoneyRockTest\Utilities\obj\Debug\netstandard2.0\Utilities.csproj.CoreCompileInputs.cache
+E:\Programming\example\MoneyRockTest\Utilities\bin\Debug\netstandard2.0\Utilities.deps.json
+E:\Programming\example\MoneyRockTest\Utilities\bin\Debug\netstandard2.0\Utilities.dll
+E:\Programming\example\MoneyRockTest\Utilities\bin\Debug\netstandard2.0\Utilities.pdb
+E:\Programming\example\MoneyRockTest\Utilities\obj\Debug\netstandard2.0\Utilities.dll
+E:\Programming\example\MoneyRockTest\Utilities\obj\Debug\netstandard2.0\Utilities.pdb

@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MoneyRockCLI.DataModels
+namespace Utilities.DataModels
 {
     public class PostgresDB : DataConnection
     {

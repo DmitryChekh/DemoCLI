@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "K1OdcOM9LBKZmRunz5Y+BF2MLIZ1u+eLN8EFaWQlOmYQTIQAE3seDoeUbO42NNvEIvtCRMew4qbJ8wlAljtLPA==",
+  "dgSpecHash": "NG+YV8US41i+1MfGdsQLRZ+pxQIxzPwinXeAaaZ5+IPnYGS3sQUMzRpZAa9UiUtAvgrSpiEk7ByFIeR7eTsFOQ==",
   "success": true,
   "projectFilePath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dimar\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\linq2db\\3.1.6\\linq2db.3.1.6.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\linq2db.postgresql\\3.1.6\\linq2db.postgresql.3.1.6.nupkg.sha512",
@@ -26,6 +27,7 @@
     "C:\\Users\\dimar\\.nuget\\packages\\npgsql\\5.0.0\\npgsql.5.0.0.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.0\\npgsql.entityframeworkcore.postgresql.5.0.0.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\rabbitmq\\3.6.2\\rabbitmq.3.6.2.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\stackexchange.redis\\2.2.4\\stackexchange.redis.2.2.4.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

@@ -5,9 +5,9 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Threading;
 
-namespace MoneyRockCLI.Services
+namespace Utilities.Services
 {
-    public class RabbitConsumerService
+    public class RabbitConsumerService : IRabbitConsumerService
     {
         private readonly IConnectionFactory _factory;
 

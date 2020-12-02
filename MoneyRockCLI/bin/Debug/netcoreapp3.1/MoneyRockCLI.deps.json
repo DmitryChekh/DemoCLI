@@ -8,17 +8,30 @@
     ".NETCoreApp,Version=v3.1": {
       "MoneyRockCLI/1.0.0": {
         "dependencies": {
+          "Autofac": "6.0.0",
           "CommandLineParser": "2.8.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Npgsql": "5.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.0",
           "RabbitMQ.Client": "6.2.1",
           "StackExchange.Redis": "2.2.4",
+          "Utilities": "1.0.0",
           "linq2db": "3.1.6",
           "linq2db.PostgreSQL": "3.1.6"
         },
         "runtime": {
           "MoneyRockCLI.dll": {}
+        }
+      },
+      "Autofac/6.0.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
         }
       },
       "CommandLineParser/2.8.0": {
@@ -260,6 +273,7 @@
           }
         }
       },
+      "RabbitMQ/3.6.2": {},
       "RabbitMQ.Client/6.2.1": {
         "dependencies": {
           "System.Memory": "4.5.4",
@@ -473,6 +487,17 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "Utilities/1.0.0": {
+        "dependencies": {
+          "RabbitMQ": "3.6.2",
+          "RabbitMQ.Client": "6.2.1",
+          "StackExchange.Redis": "2.2.4",
+          "linq2db": "3.1.6"
+        },
+        "runtime": {
+          "Utilities.dll": {}
+        }
       }
     }
   },
@@ -481,6 +506,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tRVRXGxwXbQmPy1ZGso115O55ffVW4mWtufjOy7hduQ1BNVR1j7RQQjxpYuB6tJw5OrgqRWYVJLJ8RwYNz/j+A==",
+      "path": "autofac/6.0.0",
+      "hashPath": "autofac.6.0.0.nupkg.sha512"
     },
     "CommandLineParser/2.8.0": {
       "type": "package",
@@ -636,6 +668,13 @@
       "path": "pipelines.sockets.unofficial/2.2.0",
       "hashPath": "pipelines.sockets.unofficial.2.2.0.nupkg.sha512"
     },
+    "RabbitMQ/3.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4g9ODHrc0eMH2qnOD4u/+dIxPDi+TaVMk7r6YTQ/F6ZZ/T84II64u8E3nJ+wohYlisDMqN5LW+6p4V/vkVdpiA==",
+      "path": "rabbitmq/3.6.2",
+      "hashPath": "rabbitmq.3.6.2.nupkg.sha512"
+    },
     "RabbitMQ.Client/6.2.1": {
       "type": "package",
       "serviceable": true,
@@ -754,6 +793,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

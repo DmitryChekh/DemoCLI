@@ -5,16 +5,15 @@ using System.Threading.Tasks;
 using StackExchange.Redis;
 using LinqToDB;
 using LinqToDB.Configuration;
-using Npgsql;
 using LinqToDB.Data;
-using MoneyRockCLI.DataModels;
+using Utilities.DataModels;
 using LinqToDB.Common;
 using System.Linq;
 
-namespace MoneyRockCLI.Services
+namespace Utilities.Services
 {
 
-    public class PostgresService
+    public class PostgresService : IPostgresService
     {
         public async Task GetMessage(string messageString)
         {
@@ -37,7 +36,7 @@ namespace MoneyRockCLI.Services
             }
         }
 
-        public async Task  GetMessageById(int id)
+        public async Task GetMessageById(int id)
         {
             using (var db = new PostgresDB())
             {
@@ -61,13 +60,13 @@ namespace MoneyRockCLI.Services
 
         public async Task AddMessage(string messageString)
         {
-            using(var db = new PostgresDB())
+            using (var db = new PostgresDB())
             {
                 try
                 {
                     var result = await db.InsertAsync(new Message { MessageString = messageString });
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine("Can't add:", ex.Message); ;
                 }

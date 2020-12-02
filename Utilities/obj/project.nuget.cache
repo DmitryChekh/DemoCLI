@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "J0BS2OVT237kNVfHjDyVyG/oOJO2jQTwDQbrOGv2Mo4KXFkI6WCiAJZVB0EFP8eLeEgD9aWoDelb54IHrUIw7g==",
+  "success": true,
+  "projectFilePath": "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dimar\\.nuget\\packages\\linq2db\\3.1.6\\linq2db.3.1.6.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\rabbitmq\\3.6.2\\rabbitmq.3.6.2.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\stackexchange.redis\\2.2.4\\stackexchange.redis.2.2.4.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.diagnostics.performancecounter\\5.0.0\\system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512",
+    "C:\\Users\\dimar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

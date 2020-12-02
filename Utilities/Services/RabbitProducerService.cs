@@ -4,15 +4,16 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace MoneyRockCLI.Services
+namespace Utilities.Services
 {
-    public class RabbitProducerService
+    public class RabbitProducerService : IRabbitProducerService
     {
         private readonly IConnectionFactory _factory;
 
         public RabbitProducerService()
         {
-            _factory = new ConnectionFactory() {
+            _factory = new ConnectionFactory()
+            {
                 HostName = "localhost",
                 Port = 5672,
                 UserName = "guest",

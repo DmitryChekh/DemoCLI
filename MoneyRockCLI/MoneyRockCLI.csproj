@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.0.0" />
     <PackageReference Include="CommandLineParser" Version="2.8.0" />
     <PackageReference Include="linq2db" Version="3.1.6" />
     <PackageReference Include="linq2db.PostgreSQL" Version="3.1.6" />
@@ -34,6 +35,10 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
     <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
     <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
   </ItemGroup>
 
 </Project>
