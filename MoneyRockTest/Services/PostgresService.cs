@@ -7,11 +7,11 @@ using LinqToDB;
 using LinqToDB.Configuration;
 using Npgsql;
 using LinqToDB.Data;
-using MoneyRockTest.DataModels;
+using MoneyRockCLI.DataModels;
 using LinqToDB.Common;
 using System.Linq;
 
-namespace MoneyRockTest.Services
+namespace MoneyRockCLI.Services
 {
 
     public class PostgresService

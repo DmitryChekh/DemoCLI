@@ -4,10 +4,10 @@ using System.Text;
 using CommandLine.Text;
 using CommandLine;
 
-namespace MoneyRockTest.Options
+namespace MoneyRockCLI.Options
 {
     [Verb("postgres", HelpText = "Work with postgres.")]
-    class PostgresOption
+    class PostgresOption 
     {
 
         [Option('r', "read", Required = false, HelpText = "Read string from Postgres.")]

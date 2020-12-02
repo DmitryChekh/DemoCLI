@@ -1699,9 +1699,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockTest.csproj",
-      "projectName": "MoneyRockTest",
-      "projectPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockTest.csproj",
+      "projectUniqueName": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockCLI.csproj",
+      "projectName": "MoneyRockCLI",
+      "projectPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockCLI.csproj",
       "packagesPath": "C:\\Users\\dimar\\.nuget\\packages\\",
       "outputPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\obj\\",
       "projectStyle": "PackageReference",

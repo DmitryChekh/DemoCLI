@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using LinqToDB.Configuration;
 
-namespace MoneyRockTest.DataModels
+namespace MoneyRockCLI.DataModels
 {
     public class ConnectionStringSettings : IConnectionStringSettings
     {

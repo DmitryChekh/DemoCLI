@@ -4,7 +4,7 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace MoneyRockTest.Services
+namespace MoneyRockCLI.Services
 {
     public class RabbitProducerService
     {

@@ -1,25 +1,18 @@
 ﻿using CommandLine;
-using MoneyRockTest.Options;
-using MoneyRockTest.Services;
+using MoneyRockCLI.Options;
+using MoneyRockCLI.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace MoneyRockTest
+namespace MoneyRockCLI
 {
     public class CommandExecuter
     {
-        //private readonly PostgresService _postgresService;
-        //private readonly RabbitConsumerService _rabbitConsumerService;
-        //private readonly RabbitProducerService _rabbitProducerService;
-        //private readonly RedisService _redisService;
 
         public CommandExecuter()
         {
-            //_postgresService = new PostgresService();
-            //_rabbitConsumerService = new RabbitConsumerService();
-            //_rabbitProducerService = new RabbitProducerService();
-            //_redisService = new RedisService();
         }
 
 
@@ -27,72 +20,79 @@ namespace MoneyRockTest
         public void Execute(string[] args)
         {
             Parser.Default.ParseArguments<RedisOption, PostgresOption, RabbitOption>(args)
-          .WithParsed<RedisOption>(async o =>
-          {
-              Console.WriteLine("Start working with Redis...");
-              RedisService redisService = new RedisService();
-              if (!string.IsNullOrEmpty(o.Key))
-              {
-                  if (o.Read)
-                  {
+          .WithParsed<RedisOption>(async option => await ExecuteRedisServiceAsync(option))
+          .WithParsed<PostgresOption>(async option => await ExecutePostgresServiceAsync(option))
+          .WithParsed<RabbitOption>(option => ExecuteRabbitService(option));
 
-                      await redisService.GetString(o.Key);
-                  }
-                  if (o.Write)
-                  {
-                      if (!string.IsNullOrEmpty(o.Value))
-                      {
+        }
 
-                          await redisService.SetString(o.Key, o.Value);
-                      }
-                  }
-              }
 
-          })
-          .WithParsed<PostgresOption>(async o =>
-          {
-              Console.WriteLine("Start working with PostgreSQL...");
-              PostgresService postgresService = new PostgresService();
-              if (o.Read)
-              {
-                  if (o.Id)
-                  {
-                      int id;
-                      var result = Int32.TryParse(o.Value, out id);
-                      if (result)
-                          await postgresService.GetMessageById(id);
-                      else
-                          Console.WriteLine("Value is not valid");
-                  }
-                  else
-                      await postgresService.GetMessage(o.Value);
-              }
-              if (o.Write)
-              {
-                  if (!string.IsNullOrEmpty(o.Value))
-                  {
-                      await postgresService.AddMessage(o.Value);
-                  }
-              }
-          })
-          .WithParsed<RabbitOption>(o =>
-          {
-              Console.WriteLine("Start working with RabbitMQ...");
+        private async Task ExecuteRedisServiceAsync(RedisOption option)
+        {
+            Console.WriteLine("Start working with Redis...");
+            RedisService redisService = new RedisService();
+            if (!string.IsNullOrEmpty(option.Key))
+            {
+                if (option.Read)
+                {
 
-              if (o.Send)
-              {
-                  RabbitProducerService rabbitProducerService = new RabbitProducerService();
-                  if (!string.IsNullOrEmpty(o.Value))
-                  {
-                      rabbitProducerService.Send(o.Value);
-                  }
-              }
-              if (o.Receive)
-              {
-                  RabbitConsumerService rabbitConsumerService = new RabbitConsumerService();
-                  rabbitConsumerService.Subscribe();
-              }
-          });
+                    await redisService.GetString(option.Key);
+                }
+                if (option.Write)
+                {
+                    if (!string.IsNullOrEmpty(option.Value))
+                    {
+
+                        await redisService.SetString(option.Key, option.Value);
+                    }
+                }
+            }
+        }
+
+        private async Task ExecutePostgresServiceAsync(PostgresOption option)
+        {
+            Console.WriteLine("Start working with PostgreSQL...");
+            PostgresService postgresService = new PostgresService();
+            if (option.Read)
+            {
+                if (option.Id)
+                {
+                    int id;
+                    var result = Int32.TryParse(option.Value, out id);
+                    if (result)
+                        await postgresService.GetMessageById(id);
+                    else
+                        Console.WriteLine("Value is not valid");
+                }
+                else
+                    await postgresService.GetMessage(option.Value);
+            }
+            if (option.Write)
+            {
+                if (!string.IsNullOrEmpty(option.Value))
+                {
+                    await postgresService.AddMessage(option.Value);
+                }
+            }
+        }
+
+        private void ExecuteRabbitService(RabbitOption option)
+        {
+            Console.WriteLine("Start working with RabbitMQ...");
+
+            if (option.Send)
+            {
+                RabbitProducerService rabbitProducerService = new RabbitProducerService();
+                if (!string.IsNullOrEmpty(option.Value))
+                {
+                    rabbitProducerService.Send(option.Value);
+                }
+            }
+            if (option.Receive)
+            {
+                RabbitConsumerService rabbitConsumerService = new RabbitConsumerService();
+                rabbitConsumerService.Subscribe();
+            }
         }
 
     }

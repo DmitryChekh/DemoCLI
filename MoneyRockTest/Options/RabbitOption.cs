@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using CommandLine.Text;
 using CommandLine;
-namespace MoneyRockTest.Options
+
+
+namespace MoneyRockCLI.Options
 {
     [Verb("rabbit", HelpText = "Work with RabbitMQ.")]
-    class RabbitOption
+    class RabbitOption 
     {
 
         [Option('s', "send", Required = false, HelpText = "Send message to RabbitMQ.")]

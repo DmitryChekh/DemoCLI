@@ -5,15 +5,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MoneyRockTest.DataModels
+namespace MoneyRockCLI.DataModels
 {
     public class DbMyTest : DataConnection
     {
 
         public DbMyTest() : base("MyTestDB") {
         }
-
-
         public ITable<Message> Message => GetTable<Message>();
+
     }
 }

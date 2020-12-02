@@ -4,10 +4,10 @@ using System.Text;
 using CommandLine.Text;
 using CommandLine;
 
-namespace MoneyRockTest.Options
+namespace MoneyRockCLI.Options
 {
     [Verb("redis", HelpText = "Work with redis.")]
-    public class RedisOption
+    public class RedisOption 
     {
 
 

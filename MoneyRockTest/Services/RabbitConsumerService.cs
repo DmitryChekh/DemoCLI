@@ -5,7 +5,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Threading;
 
-namespace MoneyRockTest.Services
+namespace MoneyRockCLI.Services
 {
     public class RabbitConsumerService
     {

@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using StackExchange.Redis;
 
-namespace MoneyRockTest.Services
+namespace MoneyRockCLI.Services
 {
     public class RedisService
     {
@@ -42,7 +42,6 @@ namespace MoneyRockTest.Services
             else
                 Console.WriteLine(valueOfKey.ToString());
         }
-
 
     }
 }
