@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System.Threading;
 
 namespace MoneyRockTest.Services
 {
@@ -31,7 +32,6 @@ namespace MoneyRockTest.Services
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
-
                 var consumer = new EventingBasicConsumer(channel);
 
                 consumer.Received += (model, ea) =>
@@ -39,6 +39,7 @@ namespace MoneyRockTest.Services
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
                     Console.WriteLine(" [x] Received {0}", message);
+                    Thread.Sleep(5000);
                 };
 
                 channel.BasicConsume(queue: "myqueue",

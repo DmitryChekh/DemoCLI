@@ -37,29 +37,35 @@ namespace MoneyRockTest.Services
             }
         }
 
-        public void GetMessageById(int id)
+        public async Task  GetMessageById(int id)
         {
             using (var db = new DbMyTest())
             {
-                var message = from m in db.Message
-                              where m.Id == id
-                              select m;
+                try
+                {
+                    var message = await db.Message.FirstOrDefaultAsync(m => m.Id == id);
 
-                if(message.Any())
-                    Console.WriteLine($"{message.First().Id} : {message.First().MessageString}");
-                else
-                    Console.WriteLine("Not found");
+                    if (message != null)
+                        Console.WriteLine($"{message.Id} : {message.MessageString}");
+                    else
+                        Console.WriteLine("Not found");
+                }
+                catch
+                {
+                    Console.WriteLine("[ERROR]: Can't connect to Postgres");
+                }
+
 
             }
         }
 
-        public void AddMessage(string messageString)
+        public async Task AddMessage(string messageString)
         {
             using(var db = new DbMyTest())
             {
                 try
                 {
-                    var result = db.Insert(new Message { MessageString = messageString });
+                    var result = await db.InsertAsync(new Message { MessageString = messageString });
                 }
                 catch(Exception ex)
                 {

@@ -74,7 +74,7 @@ namespace MoneyRockTest
                        int id;
                        var result = Int32.TryParse(o.Value, out id);
                        if (result)
-                           postgresService.GetMessageById(id);
+                           await postgresService.GetMessageById(id);
                        else
                            Console.WriteLine("Value is not valid");
                    }
@@ -85,7 +85,7 @@ namespace MoneyRockTest
                {
                    if (!string.IsNullOrEmpty(o.Value))
                    {
-                       postgresService.AddMessage(o.Value);
+                       await postgresService.AddMessage(o.Value);
                    }
                }
            })
