@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyRockCLI", "MoneyRockTest\MoneyRockCLI.csproj", "{30787265-68B2-4FD8-87B9-1FACFB7450D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyRockCLI", "MoneyRockCLI\MoneyRockCLI.csproj", "{30787265-68B2-4FD8-87B9-1FACFB7450D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockCLI.csproj": {}
+    "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj": {}
   },
   "projects": {
-    "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockCLI.csproj": {
+    "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockCLI.csproj",
+        "projectUniqueName": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
         "projectName": "MoneyRockCLI",
-        "projectPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\MoneyRockCLI.csproj",
+        "projectPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
         "packagesPath": "C:\\Users\\dimar\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockTest\\obj\\",
+        "outputPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimar\\AppData\\Roaming\\NuGet\\NuGet.Config",

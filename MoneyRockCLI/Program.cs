@@ -35,6 +35,7 @@ namespace MoneyRockCLI
                 {
                     continue;
                 }
+
                 var args = command.Split(' ');
 
                 commandExecuter.Execute(args);

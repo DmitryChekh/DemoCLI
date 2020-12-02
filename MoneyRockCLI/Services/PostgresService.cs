@@ -18,7 +18,7 @@ namespace MoneyRockCLI.Services
     {
         public async Task GetMessage(string messageString)
         {
-            using (var db = new DbMyTest())
+            using (var db = new PostgresDB())
             {
                 try
                 {
@@ -39,7 +39,7 @@ namespace MoneyRockCLI.Services
 
         public async Task  GetMessageById(int id)
         {
-            using (var db = new DbMyTest())
+            using (var db = new PostgresDB())
             {
                 try
                 {
@@ -61,7 +61,7 @@ namespace MoneyRockCLI.Services
 
         public async Task AddMessage(string messageString)
         {
-            using(var db = new DbMyTest())
+            using(var db = new PostgresDB())
             {
                 try
                 {

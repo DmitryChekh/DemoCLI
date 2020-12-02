@@ -7,10 +7,10 @@ using System.Text;
 
 namespace MoneyRockCLI.DataModels
 {
-    public class DbMyTest : DataConnection
+    public class PostgresDB : DataConnection
     {
 
-        public DbMyTest() : base("MyTestDB") {
+        public PostgresDB() : base("MyTestDB") {
         }
         public ITable<Message> Message => GetTable<Message>();
 
