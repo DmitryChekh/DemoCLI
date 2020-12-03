@@ -32,9 +32,9 @@ namespace MoneyRockCLI
         public void Execute(string[] args)
         {
             Parser.Default.ParseArguments<RedisOption, PostgresOption, RabbitOption>(args)
-          .WithParsed<RedisOption>(async option => await ExecuteRedisServiceAsync(option))
-          .WithParsed<PostgresOption>(async option => await ExecutePostgresServiceAsync(option))
-          .WithParsed<RabbitOption>(option => ExecuteRabbitService(option));
+              .WithParsed<RedisOption>(async option => await ExecuteRedisServiceAsync(option))
+              .WithParsed<PostgresOption>(async option => await ExecutePostgresServiceAsync(option))
+              .WithParsed<RabbitOption>(option => ExecuteRabbitService(option));
 
         }
 
@@ -47,14 +47,17 @@ namespace MoneyRockCLI
                 if (option.Read)
                 {
 
-                    await _redisService.GetString(option.Key);
+                    Console.WriteLine(await _redisService.GetString(option.Key));
                 }
                 if (option.Write)
                 {
                     if (!string.IsNullOrEmpty(option.Value))
                     {
-
-                        await _redisService.SetString(option.Key, option.Value);
+                        Console.WriteLine(await _redisService.SetString(option.Key, option.Value));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Key is required.");
                     }
                 }
             }
@@ -70,18 +73,18 @@ namespace MoneyRockCLI
                     int id;
                     var result = Int32.TryParse(option.Value, out id);
                     if (result)
-                        await _postgresService.GetMessageById(id);
+                        Console.WriteLine(await _postgresService.GetById(id));
                     else
                         Console.WriteLine("Value is not valid");
                 }
                 else
-                    await _postgresService.GetMessage(option.Value);
+                    Console.WriteLine(await _postgresService.Get(option.Value));
             }
             if (option.Write)
             {
                 if (!string.IsNullOrEmpty(option.Value))
                 {
-                    await _postgresService.AddMessage(option.Value);
+                    Console.WriteLine(await _postgresService.Create(option.Value));
                 }
             }
         }

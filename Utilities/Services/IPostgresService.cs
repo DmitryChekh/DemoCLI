@@ -4,8 +4,8 @@ namespace Utilities.Services
 {
     public interface IPostgresService
     {
-        Task AddMessage(string messageString);
-        Task GetMessage(string messageString);
-        Task GetMessageById(int id);
+        Task<string> Create(string messageString);
+        Task<string> Get(string messageString);
+        Task<string> GetById(int id);
     }
 }

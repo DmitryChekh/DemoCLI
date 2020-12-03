@@ -15,7 +15,7 @@ namespace Utilities.Services
 
     public class PostgresService : IPostgresService
     {
-        public async Task GetMessage(string messageString)
+        public async Task<string> Get(string messageString)
         {
             using (var db = new PostgresDB())
             {
@@ -23,20 +23,20 @@ namespace Utilities.Services
                 {
                     var message = await db.Message.Where(m => m.MessageString == messageString).ToListAsync();
                     if (message.Any())
-                        Console.WriteLine($"{message.First().Id} : {message.First().MessageString}");
+                        return $"{message.First().Id} : {message.First().MessageString}";
                     else
-                        Console.WriteLine("Not found");
+                        return "Not found";
                 }
-                catch
+                catch(Exception ex)
                 {
-                    Console.WriteLine("[ERROR]: Can't connect to Postgres");
+                    return $"[ERROR]: Can't connect to Postgres [{ex.Message}]";
                 }
 
 
             }
         }
 
-        public async Task GetMessageById(int id)
+        public async Task<string> GetById(int id)
         {
             using (var db = new PostgresDB())
             {
@@ -45,30 +45,31 @@ namespace Utilities.Services
                     var message = await db.Message.FirstOrDefaultAsync(m => m.Id == id);
 
                     if (message != null)
-                        Console.WriteLine($"{message.Id} : {message.MessageString}");
+                        return $"{message.Id} : {message.MessageString}";
                     else
-                        Console.WriteLine("Not found");
+                        return "Not found";
                 }
-                catch
+                catch (Exception ex)
                 {
-                    Console.WriteLine("[ERROR]: Can't connect to Postgres");
+                    return $"[ERROR]: Can't connect to Postgres [{ex.Message}]";
                 }
 
 
             }
         }
 
-        public async Task AddMessage(string messageString)
+        public async Task<string> Create(string messageString)
         {
             using (var db = new PostgresDB())
             {
                 try
                 {
                     var result = await db.InsertAsync(new Message { MessageString = messageString });
+                    return "Added: " + messageString;
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Can't add:", ex.Message); ;
+                    return $"[ERROR]: Can't connect to Postgres [{ex.Message}]";
                 }
             }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J0BS2OVT237kNVfHjDyVyG/oOJO2jQTwDQbrOGv2Mo4KXFkI6WCiAJZVB0EFP8eLeEgD9aWoDelb54IHrUIw7g==",
+  "dgSpecHash": "lDrW7fIHgnTV0ZXkKj+uzGxjHYfkEu/c0HTKYKNCteayodLCsv+W/CxZmMbsymuZ59K+cQ1NXVjnATgelmyxBw==",
   "success": true,
-  "projectFilePath": "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
+  "projectFilePath": "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dimar\\.nuget\\packages\\linq2db\\3.1.6\\linq2db.3.1.6.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",

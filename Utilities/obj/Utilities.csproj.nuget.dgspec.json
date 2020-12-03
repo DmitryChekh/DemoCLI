@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj": {}
+    "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj": {}
   },
   "projects": {
-    "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj": {
+    "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
+        "projectUniqueName": "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
         "projectName": "Utilities",
-        "projectPath": "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
+        "projectPath": "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj",
         "packagesPath": "C:\\Users\\dimar\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\example\\MoneyRockTest\\Utilities\\obj\\",
+        "outputPath": "e:\\Programming\\example\\MoneyRockTest\\Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimar\\AppData\\Roaming\\NuGet\\NuGet.Config",

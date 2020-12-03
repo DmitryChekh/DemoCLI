@@ -1948,11 +1948,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
+      "projectUniqueName": "e:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
       "projectName": "MoneyRockCLI",
-      "projectPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
+      "projectPath": "e:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
       "packagesPath": "C:\\Users\\dimar\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\obj\\",
+      "outputPath": "e:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1969,8 +1969,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj": {
-              "projectPath": "E:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj"
+            "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj": {
+              "projectPath": "e:\\Programming\\example\\MoneyRockTest\\Utilities\\Utilities.csproj"
             }
           }
         }

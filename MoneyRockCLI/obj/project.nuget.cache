@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NG+YV8US41i+1MfGdsQLRZ+pxQIxzPwinXeAaaZ5+IPnYGS3sQUMzRpZAa9UiUtAvgrSpiEk7ByFIeR7eTsFOQ==",
+  "dgSpecHash": "Cy0JRNe3oKbJ1yw83OOCCZybxqf5yx4qggVkJA6rbquhxlqD/fj1OXHYXcAyVlVLsLcutHSSdL31C2wbfllnQQ==",
   "success": true,
-  "projectFilePath": "E:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
+  "projectFilePath": "e:\\Programming\\example\\MoneyRockTest\\MoneyRockCLI\\MoneyRockCLI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dimar\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\dimar\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
